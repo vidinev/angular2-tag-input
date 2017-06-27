@@ -60,21 +60,15 @@ export interface AutoCompleteItem {
     </form>
   `,
   styles: [`
-    :host {
-      font-family: "Roboto", "Helvetica Neue", sans-serif;
-      font-size: 16px;
-      display: block;
-      box-shadow: 0 1px #ccc;
-      padding: 8px 0 6px 0;
-      will-change: box-shadow;
-      transition: box-shadow 0.12s ease-out;
+    /deep/ rl-tag-input {
+     display: block;
     }
 
-     :host .ng2-tag-input-form {
+    :host .ng2-tag-input-form {
       display: inline;
     }
 
-     :host .ng2-tag-input-field {
+    :host .ng2-tag-input-field {
       font-family: "Roboto", "Helvetica Neue", sans-serif;
       font-size: 16px;
       display: inline-block;
@@ -84,11 +78,11 @@ export interface AutoCompleteItem {
       padding: 8px 0;
     }
 
-     :host .ng2-tag-input-field:focus {
+    :host .ng2-tag-input-field:focus {
       outline: 0;
     }
 
-     :host .rl-tag-input-autocomplete-container {
+    :host .rl-tag-input-autocomplete-container {
       position: relative;
       z-index: 10;
     }

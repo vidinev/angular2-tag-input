@@ -9,9 +9,7 @@ import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/co
     (click)="removeTag()">&times;</span>
   `,
   styles: [`
-    :host {
-      font-family: "Roboto", "Helvetica Neue", sans-serif;
-      font-size: 16px;
+    /deep/ rl-tag-input-item {
       height: 32px;
       line-height: 32px;
       display: inline-block;
@@ -19,10 +17,8 @@ import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/co
       padding: 0 12px;
       border-radius: 90px;
       margin-right: 10px;
-      transition: all 0.12s ease-out;
     }
-
-     :host .ng2-tag-input-remove {
+    :host .ng2-tag-input-remove {
       background: #a6a6a6;
       border-radius: 50%;
       color: #e0e0e0;
@@ -42,7 +38,7 @@ import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/co
       background: #0d8bff;
     }
 
-     :host.ng2-tag-input-item-selected .ng2-tag-input-remove {
+    :host.ng2-tag-input-item-selected .ng2-tag-input-remove {
       background: white;
       color: #0d8bff;
     }

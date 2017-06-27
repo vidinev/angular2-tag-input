@@ -16,25 +16,21 @@ import { KEYS } from '../../shared/tag-input-keys';
     </div>
   `,
   styles: [`
-    :host {
-      box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+    /deep/ rl-tag-input-autocomplete {
       display: block;
       position: absolute;
-      top: 100%;
-      font-family: "Roboto", "Helvetica Neue", sans-serif;
-      font-size: 16px;
+      top: 100%;      
+      box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
       color: #444444;
       background: white;
       padding: 8px 0;
     }
-
-     :host .rl-autocomplete-item {
+    :host .rl-autocomplete-item {
       padding: 0 16px;
       height: 48px;
       line-height: 48px;
     }
-
-     :host .is-selected {
+    :host .is-selected {
       background: #eeeeee;
     }
   `]
